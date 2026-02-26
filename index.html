@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Репетитор английского языка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff6ec4, #7873f5, #42e695);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 35px;
+            background: white;
+            color: #6a11cb;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.25);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .price {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .form-box {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 30px auto 0;
+        }
+
+        .form-box input, .form-box textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+
+        .success-message {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 600;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(0,0,0,0.2);
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Английский легко и с удовольствием!</h1>
+    <p>Подготовка к ВПР и ОГЭ по английскому языку для школьников</p>
+    <a href="#contact" class="btn">Записаться на урок</a>
+</header>
+
+<section>
+    <h2 style="text-align:center; font-size:2rem;">Почему выбирают меня?</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>🎯 Индивидуальный подход</h3>
+            <p>Программа подстраивается под ваш уровень и цели.</p>
+        </div>
+        <div class="card">
+            <h3>📚 Подготовка к ВПР и ОГЭ</h3>
+            <p>Разбираем формат экзамена, отрабатываем задания и повышаем уверенность перед контрольными и экзаменами.</p>
+        </div>
+        <div class="card">
+            <h3>🌍 Современные материалы</h3>
+            <p>Использую интерактивные задания и реальные диалоги.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 style="text-align:center; font-size:2rem;">Подготовка к ВПР</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>📖 Разбор формата</h3>
+            <p>Подробно изучаем структуру ВПР и типовые задания.</p>
+        </div>
+        <div class="card">
+            <h3>✍ Тренировка заданий</h3>
+            <p>Регулярно выполняем тренировочные варианты и анализируем ошибки.</p>
+        </div>
+        <div class="card">
+            <h3>🎯 Уверенность на работе</h3>
+            <p>Ученики спокойно пишут ВПР без стресса и спешки.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 style="text-align:center; font-size:2rem;">Подготовка к ОГЭ</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>📝 Полный разбор экзамена</h3>
+            <p>Письмо, аудирование, чтение, грамматика и устная часть.</p>
+        </div>
+        <div class="card">
+            <h3>📊 Пробные экзамены</h3>
+            <p>Регулярные пробники с оценкой по критериям ФИПИ.</p>
+        </div>
+        <div class="card">
+            <h3>🏆 Реальные результаты</h3>
+            <p>Ученики повышают баллы и сдают ОГЭ на 4 и 5.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 style="text-align:center; font-size:2rem;">Как проходят занятия?</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>1️⃣ Диагностика</h3>
+            <p>Определяем уровень и составляем план подготовки.</p>
+        </div>
+        <div class="card">
+            <h3>2️⃣ Системная работа</h3>
+            <p>Пошаговая подготовка с домашними заданиями и обратной связью.</p>
+        </div>
+        <div class="card">
+            <h3>3️⃣ Контроль прогресса</h3>
+            <p>Регулярно отслеживаем результаты и корректируем программу.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 style="text-align:center; font-size:2rem;">Стоимость занятий</h2>
+    <div class="price">от 1500 ₽ / 60 минут</div>
+</section>
+
+<section>
+    <h2 style="text-align:center; font-size:2rem;">Отзывы учеников</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Анна, 9 класс ⭐⭐⭐⭐⭐</h3>
+            <p>Подтянули английский за 3 месяца! Стало намного легче понимать грамматику и говорить на уроках.</p>
+        </div>
+        <div class="card">
+            <h3>Михаил, подготовка к ОГЭ ⭐⭐⭐⭐⭐</h3>
+            <p>Сдал экзамен на 5! Занятия проходили интересно, много практики разговорной речи.</p>
+        </div>
+        <div class="card">
+            <h3>Мария, мама ученика 4 класса ⭐⭐⭐⭐⭐</h3>
+            <p>Сын занимается с удовольствием! Улучшились оценки в школе и появилась уверенность на уроках. Спасибо за внимательный и добрый подход к детям.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 style="text-align:center; font-size:2rem;">Онлайн-запись</h2>
+
+    <div class="form-box">
+        <form id="bookingForm">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <input type="tel" id="phone" placeholder="Телефон" required>
+            <input type="text" id="level" placeholder="Уровень (если знаете)">
+            <textarea id="message" rows="4" placeholder="Ваши пожелания"></textarea>
+            <button type="submit" class="btn">Отправить заявку</button>
+        </form>
+        <div class="success-message" id="successMessage">
+            Сейчас откроются сообщения VK 👌
+        </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+        <p style="margin-bottom:15px; font-weight:600;">Или напишите напрямую в сообщество:</p>
+        <a href="https://vk.com/eng_newt" target="_blank" class="btn">Перейти в сообщество VK</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Репетитор английского языка | Все права защищены</p>
+</footer>
+
+<script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const level = document.getElementById('level').value;
+        const message = document.getElementById('message').value;
+
+        const text = `Здравствуйте! Хочу записаться на урок.\n\nИмя: ${name}\nТелефон: ${phone}\nУровень: ${level}\nПожелания: ${message}`;
+
+        const encodedText = encodeURIComponent(text);
+        const vkUrl = `https://vk.me/eng_newt?text=${encodedText}`;
+
+        document.getElementById('successMessage').style.display = 'block';
+
+        setTimeout(() => {
+            window.open(vkUrl, '_blank');
+        }, 800);
+    });
+</script>
+
+</body>
+</html>
