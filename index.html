@@ -131,6 +131,10 @@
             margin-top: 50px;
         }
 
+        footer a {
+            color: white;
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2.2rem;
@@ -250,6 +254,15 @@
             <input type="tel" id="phone" placeholder="Телефон" required>
             <input type="text" id="level" placeholder="Уровень (если знаете)">
             <textarea id="message" rows="4" placeholder="Ваши пожелания"></textarea>
+            
+            <!-- Блок согласия на обработку персональных данных -->
+            <div style="margin-bottom: 15px;">
+                <label>
+                    <input type="checkbox" id="consent" name="consent" required style="width: auto; margin-right: 8px;">
+                    Я даю <a href="/soglasie.html" target="_blank">согласие на обработку персональных данных</a>
+                </label>
+            </div>
+            
             <button type="submit" class="btn">Отправить заявку</button>
         </form>
         <div class="success-message" id="successMessage">
@@ -263,7 +276,7 @@
 </section>
 
 <footer>
-    <p>© 2026 Репетитор английского языка | Все права защищены</p>
+    <p>© 2026 Репетитор английского языка | Все права защищены | <a href="/privacy.html">Политика конфиденциальности</a></p>
 </footer>
 
 <script>
